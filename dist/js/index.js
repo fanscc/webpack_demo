@@ -62,7 +62,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/dist/";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -71,14 +71,36 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./css/index.css":
+/*!***********************!*\
+  !*** ./css/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./css/index.css?");
+
+/***/ }),
+
+/***/ "./css/index.scss":
+/*!************************!*\
+  !*** ./css/index.scss ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./css/index.scss?");
+
+/***/ }),
+
 /***/ "./js/index.js":
 /*!*********************!*\
   !*** ./js/index.js ***!
   \*********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("//require('../css/index.scss')\r\ndocument.write(\"hello12ssseew1 index.html113331fff33333e3aaaff11frrr!!``\")\n\n//# sourceURL=webpack:///./js/index.js?");
+eval("__webpack_require__(/*! ../css/index.scss */ \"./css/index.scss\");\r\n__webpack_require__(/*! ../css/index.css */ \"./css/index.css\");\r\ndocument.write(\"hello12ssseew1aaaa index.html113331fff33333e3aaaff11frrr!!``11\")\n\n//# sourceURL=webpack:///./js/index.js?");
 
 /***/ })
 

@@ -1,4 +1,6 @@
 $color:red;
 #root{
-    color:$color
+    color:$color;
+    border-radius: 100%;
+    transform: translate(100px);
 }
