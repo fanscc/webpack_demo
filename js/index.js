@@ -1,3 +1,9 @@
 require('../css/index.scss');
 require('../css/index.css');
-document.write("hello12ssseew1aaaa index.html113331fff33333e3aaaff11frrr!!``11")
+
+let a = 'sdhask结婚的空间撒谎的空间啥';
+setTimeout(()=>{
+	alert(111)
+},1000)
+
+document.write(a)

@@ -17,9 +17,20 @@ module.exports = {
 		publicPath:'/',
 		filename:'js/[name].js',
 	},
-	
+
     module: {
 	   rules: [
+			 {
+				 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+					 use: [
+		         {
+		             loader: 'url-loader',
+		             options: {
+		                 limit: 10000
+		             }
+		         }
+		     ]
+			 },
 	      {
 	        test: /\.css$/,
 	        use:extractCSS.extract({
@@ -35,15 +46,12 @@ module.exports = {
 	        	use: [ 'css-loader', 'postcss-loader','sass-loader']
 	        })
 	      },
-	      {
-	        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-	        loader: 'url-loader',
-	        options: {
-	          limit: 100,
-	          name: 'imgs/[name].[ext]',
-	           publicPath:'../'
-	        },
-	      }
+	       {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                //打包包括的文件
+                include: path.resolve(__dirname, "./js"),
+            }
      	]
 	},
 	plugins: [
@@ -54,15 +62,15 @@ module.exports = {
             filename: 'list.html',
             template: 'list.html',
             chunks: ['list']
-        }), 
+        }),
         extractCSS,
     	extractLESS,
     	],
 	     devServer: {
 	        contentBase: './',
 	        host: 'localhost',
-	        port: 8188,
+	        port: 8300,
 	        inline: true, //可以监控js变化
 	        hot: true//热启动
-	    },   	
+	    },
 };
