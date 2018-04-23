@@ -1,6 +1,8 @@
 @charset "utf-8";
 body {
-	background: yellow;
+	background: royalblue;
+	font-size:18px;
+	text-align: center;
 }
 
 .bg_img {
@@ -9,5 +11,5 @@ body {
 	background: url(../imgs/logo.png);
 	font-size: 12px;
 	color:yellowgreen;
-	
+	text-align: center;
 }
