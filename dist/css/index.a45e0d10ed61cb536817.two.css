@@ -1,6 +1,1 @@
-#root {
-  color: #ccc;
-  border-radius: 100%;
-  -webkit-transform: translate(100px);
-      -ms-transform: translate(100px);
-          transform: translate(100px); }
+#root{color:#ccc;border-radius:100%;transform:translate(100px)}

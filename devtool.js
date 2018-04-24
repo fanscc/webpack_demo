@@ -1,4 +1,4 @@
-const modunpre = 'dev1';
+const modunpre = 'dev';
 const cssconfig = {};
 const scssconfig = {};
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
